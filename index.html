@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Play Video Gallery</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#111;
+      color:white;
+    }
+
+    header{
+      text-align:center;
+      padding:30px;
+      font-size:32px;
+      font-weight:bold;
+    }
+
+    .video-container{
+      max-width:1200px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+      gap:20px;
+      padding:20px;
+    }
+
+    .video-card{
+      background:#1e1e1e;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 0 10px rgba(0,0,0,0.5);
+      transition:0.3s;
+    }
+
+    .video-card:hover{
+      transform:scale(1.02);
+    }
+
+    video{
+      width:100%;
+      display:block;
+    }
+
+    .caption{
+      padding:15px;
+      font-size:18px;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  My Video Gallery
+</header>
+
+<div class="video-container">
+
+  <div class="video-card">
+    <video autoplay muted loop playsinline>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+    <div class="caption">Video 1</div>
+  </div>
+
+  <div class="video-card">
+    <video autoplay muted loop playsinline>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+    <div class="caption">Video 2</div>
+  </div>
+
+  <div class="video-card">
+    <video autoplay muted loop playsinline>
+      <source src="video3.mp4" type="video/mp4">
+    </video>
+    <div class="caption">Video 3</div>
+  </div>
+
+  <div class="video-card">
+    <video autoplay muted loop playsinline>
+      <source src="video4.mp4" type="video/mp4">
+    </video>
+    <div class="caption">Video 4</div>
+  </div>
+
+  <div class="video-card">
+    <video autoplay muted loop playsinline>
+      <source src="video5.mp4" type="video/mp4">
+    </video>
+    <div class="caption">Video 5</div>
+  </div>
+
+</div>
+
+</body>
+</html>
